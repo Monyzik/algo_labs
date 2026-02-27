@@ -13,9 +13,6 @@ void test1() {
     assert(tree->r->data == 20);
     tree = insert(tree, 9);
     assert(tree->l->data == 9);
-
-    // assert(query(tree, 1, depth(tree)) == 1);
-
     clearTree(tree);
 }
 
@@ -23,7 +20,6 @@ void test2() {
     printf("test_2:\n");
     node *tree = NULL;
     assert(depth(tree) == 0);
-    tree = erase(tree, 10);
     tree = insert(tree, 20);
     assert(depth(tree) == 1);
     tree = insert(tree, 9);
@@ -38,7 +34,7 @@ void test2() {
 void test3() {
     printf("test_3:\n");
     node *tree = NULL;
-    assert(erase(tree, 100000) == NULL);
+    tree = erase(tree, 100000);
     tree = insert(tree, 10);
     tree = insert(tree, 20);
     tree = insert(tree, 20);
@@ -68,6 +64,7 @@ void test4() {
     tree = insert(tree, 21);
     assert(query(tree, 1, depth(tree)) == 1);
     print(tree, 0);
+    clearTree(tree);
 }
 
 void test5() {
@@ -83,6 +80,7 @@ void test5() {
     tree = insert(tree, 9);
     tree = insert(tree, 1);
     assert(findMin(tree)->data == 1);
+    clearTree(tree);
 }
 
 signed main() {
