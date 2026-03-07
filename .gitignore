@@ -4,8 +4,11 @@
 ### C ###
 # Prerequisites
 *.d
-lab1/tests
+*/tests
+*/generator
+lab2/*.txt
 main
+
 
 # Object files
 *.o

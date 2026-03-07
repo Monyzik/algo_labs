@@ -11,9 +11,10 @@ signed main() {
     printf("4. Проверить, все ли листья на одном уровне\n");
     printf("0. Выход\n");
     printf("Выбор: ");
-    scanf("%d", &choice);
+    int a = scanf("%d", &choice);
 
-    while (choice != 0) {
+
+    while (choice != 0 && a == 1) {
         switch (choice) {
             case 1:
                 printf("Введите значение:\n");
@@ -33,6 +34,6 @@ signed main() {
                 break;
         }
         printf("Выбор: ");
-        scanf("%d", &choice);
+        a = scanf("%d", &choice);
     }
 }
