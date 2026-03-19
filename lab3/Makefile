@@ -1,5 +1,5 @@
 build:
-	gcc -c algorithms.c readFile.c
+	gcc -c parse.c stack.c structures.c tree.c
 
 test: build generate
 	gcc -o tests tests.c
@@ -8,10 +8,6 @@ test: build generate
 all:
 	gcc -o main main.c
 	./main
-
-generate:
-	gcc -o generator generator.c
-	./generator
 
 clean:
 	rm -f *.o tests main generator

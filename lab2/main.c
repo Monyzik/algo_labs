@@ -36,9 +36,9 @@ signed main() {
             // while (getchar() != '\n') {}
             return 0;
         }
+        keyType x;
         switch (choice) {
             case 1:
-                keyType x;
                 printf("Введите ключ: ");
                 if (scanf("%d", &x) != 1) {
                     printf("Неправильный формат ввода\n");

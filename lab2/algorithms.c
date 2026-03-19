@@ -15,19 +15,21 @@ void swapStrings(char **a, char **b) {
 }
 
 void shakerSort(int n, int **keys, char ***strings) {
+    int *_keyes = *keys;
+    char **_strings = *strings;
     int l = 0, r = n - 1;
     while (l < r) {
         for (int i = l; i < r; i++) {
-            if ((*keys)[i] > (*keys)[i + 1]) {
-                swapKeys(&(*keys)[i], &(*keys)[i + 1]);
-                swapStrings(&(*strings)[i], &(*strings)[i + 1]);
+            if (_keyes[i] > _keyes[i + 1]) {
+                swapKeys(&_keyes[i], &_keyes[i + 1]);
+                swapStrings(&_strings[i], &_strings[i + 1]);
             }
         }
         r--;
         for (int i = r; i > l; i--) {
-            if ((*keys)[i - 1] > (*keys)[i]) {
-                swapKeys(&(*keys)[i - 1], &(*keys)[i]);
-                swapStrings(&(*strings)[i - 1], &(*strings)[i]);
+            if (_keyes[i - 1] > _keyes[i]) {
+                swapKeys(&_keyes[i - 1], &_keyes[i]);
+                swapStrings(&_strings[i - 1], &_strings[i]);
             }
         }
         l++;
