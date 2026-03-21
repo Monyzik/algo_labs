@@ -4,7 +4,7 @@ project(algo_labs C CXX)
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -Wshadow")
+#set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -Wshadow")
 
 include(FetchContent)
 FetchContent_Declare(
@@ -15,4 +15,13 @@ FetchContent_Declare(
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 
-add_executable(lab3 lab3/main.c lab3/structures.c lab3/stack.c)
+add_executable(lab3 lab3/main.c lab3/structures.c lab3/stack.c lab3/parse.c lab3/tree.c)
+
+enable_testing()
+
+add_executable(tests lab3/tests.cpp lab3/structures.c lab3/stack.c lab3/parse.c lab3/tree.c)
+
+target_link_libraries(tests gtest_main gtest stdc++)
+
+include(GoogleTest)
+gtest_discover_tests(tests)

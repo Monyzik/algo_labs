@@ -1,7 +1,7 @@
 build:
 	gcc -c parse.c stack.c structures.c tree.c
 
-test: build generate
+test: build
 	gcc -o tests tests.c
 	./tests
 

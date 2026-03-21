@@ -1,6 +1,13 @@
 #ifndef ALGO_LABS_STRUCTURES_H
 #define ALGO_LABS_STRUCTURES_H
 
+#ifdef __cplusplus
+extern "C" {
+
+
+
+#endif
+
 typedef enum enumType {
     number = 0,
     variable = 1,
@@ -19,10 +26,15 @@ typedef struct typeData {
 
     union {
         int num;
-        char *operator;
+        char *sign;
         char *var;
     };
 } typeData;
+
+typedef struct node {
+    typeData data;
+    struct node *l, *r;
+} node;
 
 typedef struct stack {
     typeData *data;
@@ -30,10 +42,12 @@ typedef struct stack {
     int capacity;
 } stack;
 
-typedef struct node {
-    typeData data;
-    struct node *l, *r;
-} node;
+typedef struct nodeStack {
+    node *data;
+    int size;
+    int capacity;
+} nodeStack;
+
 
 typeData createNumber(int n);
 
@@ -41,5 +55,9 @@ typeData createVariable(char *v);
 
 typeData createOperator(char *x, enumType type);
 
+void printTypeData(typeData data);
 
+#ifdef __cplusplus
+}
+#endif
 #endif

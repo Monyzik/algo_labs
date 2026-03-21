@@ -1,5 +1,9 @@
 #include <ctype.h>
+#include <math.h>
 #include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 #include "structures.h"
 #include "stack.h"
@@ -46,7 +50,7 @@ stack parse(char *s) {
                 i++;
             }
             int len = i - st;
-            char *str = malloc(sizeof(char) * (len + 1));
+            char *str = (char *) malloc(sizeof(char) * (len + 1));
             strncpy(str, s + st, len);
             str[len] = '\0';
             push(&ans, createVariable(str));
@@ -89,17 +93,17 @@ stack toRpn(stack *s) {
         if (cur.type == number || cur.type == variable) {
             push(&out, cur);
         } else if (cur.type == bracket) {
-            if (strcmp(cur.operator, "(") == 0) {
+            if (strcmp(cur.sign, "(") == 0) {
                 push(&st, cur);
             } else {
                 bool ok = false;
                 while (st.size > 0) {
-                    typeData t = pop(&st);
-                    if (t.type == bracket && strcmp(cur.operator, ")") == 0) {
+                    typeData *t = pop(&st);
+                    if (t->type == bracket && strcmp(cur.sign, ")") == 0) {
                         ok = true;
                         break;
                     }
-                    push(&out, t);
+                    push(&out, *t);
                 }
                 if (!ok) {
                     printf("Неправильное выражение\n");
@@ -112,9 +116,9 @@ stack toRpn(stack *s) {
                 typeData *top = back(&st);
                 if (top->type == bracket) break;
                 int topPriority = getPriority(*top);
-                if (topPriority > priority) {
-                    typeData t = pop(&st);
-                    push(&out, t);
+                if (topPriority >= priority) {
+                    typeData *t = pop(&st);
+                    push(&out, *t);
                 } else {
                     break;
                 }
@@ -123,12 +127,12 @@ stack toRpn(stack *s) {
         }
     }
     while (st.size > 0) {
-        typeData t = pop(&st);
-        if (t.type == bracket && strcmp(t.operator, "(") == 0) {
+        typeData *t = pop(&st);
+        if (t->type == bracket && strcmp(t->sign, "(") == 0) {
             printf("Неправильное выражение\n");
             exit(-1);
         }
-        push(&out, t);
+        push(&out, *t);
     }
     freeStack(&st);
     return out;

@@ -27,12 +27,22 @@ typeData createVariable(char *v) {
 typeData createOperator(char *x, enumType type) {
     typeData data;
     data.type = type;
-    data.operator = malloc(sizeof(char) * (strlen(x) + 1));
-    if (!data.operator) {
+    data.sign = malloc(sizeof(char) * (strlen(x) + 1));
+    if (!data.sign) {
         printf("Не удалось выделить память\n");
-        free(data.operator);
+        free(data.sign);
         exit(-1);
     }
-    strcpy(data.operator, x);
+    strcpy(data.sign, x);
     return data;
+}
+
+void printTypeData(typeData data) {
+    if (data.type == number) {
+        printf("%d", data.num);
+    } else if (data.type == variable) {
+        printf("%s", data.var);
+    } else {
+        printf("%s", data.sign);
+    }
 }

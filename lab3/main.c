@@ -2,34 +2,43 @@
 #include <string.h>
 #include <stdlib.h>
 
-#include "parse.c"
-#include "tree.c"
+#include "structures.h"
+#include "parse.h"
+#include "tree.h"
+#include "stack.h"
 
 
 signed main() {
+    printf("Введите выражение: ");
     char *string = NULL;
     size_t size = 0;
     getline(&string, &size, stdin);
-    // printf("%s", string);
     string[strcspn(string, "\n")] = 0;
 
     stack s = parse(string);
-
-    printStack(&s);
-
-
     stack rpn = toRpn(&s);
 
-    printStack(&rpn);
+    printExpression(&rpn);
     int n = rpn.size - 1;
 
     node *t = NULL;
 
     t = buildFromRpn(t, &rpn, &n);
-    printTree(t, 1);
+    if (n != -1) {
+        printf("Неправильное выражение\n");
+        return 2;
+    }
+    printTree(t, 0);
+    printInfix(t);
+    printf("\n");
+
+    t = transformLoop(t);
+
+    printTree(t, 0);
+    printInfix(t);
+    printf("\n");
+
 
     // printf("%lu\n", strlen(string));
     // printf("%c", string[size - 1]);
-
-
 }
