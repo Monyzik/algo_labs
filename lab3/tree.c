@@ -173,6 +173,9 @@ node *removeData(node *t, node *element, bool *done) {
     t->l = removeData(t->l, element, done);
     *done = false;
     t->r = removeData(t->r, element, done);
+    if (t->r == NULL && (t->data.type == unary_minus || t->data.type == unary_plus)) {
+        t->r = createNode(createNumber(1));
+    }
     return t;
 }
 

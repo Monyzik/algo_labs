@@ -116,7 +116,8 @@ stack toRpn(stack *s) {
                 typeData *top = back(&st);
                 if (top->type == bracket) break;
                 int topPriority = getPriority(*top);
-                if (topPriority >= priority) {
+                if (topPriority > priority || (topPriority == priority && top->type != unary_minus
+                                               && top->type != unary_plus && top->type != power)) {
                     typeData *t = pop(&st);
                     push(&out, *t);
                 } else {
