@@ -1,0 +1,21 @@
+1 qwerty 3.14
+1 asdf 5.0
+3
+qwerty 3.1400
+  asdf 5.0000
+1 dyz 4.5
+1 uiop 7.7777
+3
+dyz 4.5000
+  asdf 5.0000
+  qwerty 3.1400
+    uiop 7.7777
+4 asdf
+Значение: 5.0000
+2 dyz
+3
+qwerty 3.1400
+  asdf 5.0000
+  uiop 7.7777
+4 qwerty
+Значение: 3.1400

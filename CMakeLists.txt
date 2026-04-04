@@ -26,14 +26,17 @@ FetchContent_Declare(
 
 FetchContent_MakeAvailable(googlebenchmark)
 
-
-add_executable(lab3 lab3/main.c lab3/structures.c lab3/stack.c lab3/parse.c lab3/tree.c)
-
 enable_testing()
 
-add_executable(tests lab3/tests.cpp lab3/structures.c lab3/stack.c lab3/parse.c lab3/tree.c)
+add_executable(lab3 lab3/main.c lab3/structures.c lab3/stack.c lab3/parse.c lab3/tree.c)
+add_executable(tests_lab3 lab3/tests.cpp lab3/structures.c lab3/stack.c lab3/parse.c lab3/tree.c)
+target_link_libraries(tests_lab3 gtest_main gtest stdc++ benchmark::benchmark)
 
-target_link_libraries(tests gtest_main gtest stdc++ benchmark::benchmark)
+add_executable(lab4 lab4/main.c lab4/tree.c)
+add_executable(lab4_tests lab4/tests.cpp lab4/tree.c)
+add_executable(lab4_bench lab4/benchmark.cpp lab4/tree.c)
+target_link_libraries(lab4_bench benchmark::benchmark)
+target_link_libraries(lab4_tests gtest_main gtest stdc++ benchmark::benchmark)
 
 include(GoogleTest)
-gtest_discover_tests(tests)
+gtest_discover_tests(lab4_tests)
