@@ -1,6 +1,6 @@
 {
   "context": {
-    "date": "2026-04-05T01:13:14+03:00",
+    "date": "2026-04-05T01:45:12+03:00",
     "host_name": "MacBook-Pro-Fedor-2.local",
     "executable": "/Users/fedorkobylkevic/CLionProjects/algo_labs/cmake-build-debug/lab4_bench",
     "num_cpus": 14,
@@ -26,7 +26,7 @@
         "num_sharing": 1
       }
     ],
-    "load_avg": [2.87744,3.35059,3.68457],
+    "load_avg": [3.0791,3.52295,3.7417],
     "library_version": "v1.9.5",
     "library_build_type": "debug",
     "json_schema_version": 1
@@ -41,9 +41,9 @@
       "repetitions": 1,
       "repetition_index": 0,
       "threads": 1,
-      "iterations": 3100391,
-      "real_time": 2.2573861728124479e+02,
-      "cpu_time": 2.2559444921624404e+02,
+      "iterations": 3021370,
+      "real_time": 2.3285931661543697e+02,
+      "cpu_time": 2.3263784309766763e+02,
       "time_unit": "ns"
     },
     {
@@ -55,9 +55,9 @@
       "repetitions": 1,
       "repetition_index": 0,
       "threads": 1,
-      "iterations": 2000463,
-      "real_time": 3.5552913852402395e+02,
-      "cpu_time": 3.5506180319256083e+02,
+      "iterations": 2021824,
+      "real_time": 3.4863073421843063e+02,
+      "cpu_time": 3.4792444841885367e+02,
       "time_unit": "ns"
     },
     {
@@ -69,9 +69,9 @@
       "repetitions": 1,
       "repetition_index": 0,
       "threads": 1,
-      "iterations": 1321203,
-      "real_time": 5.4689672807592524e+02,
-      "cpu_time": 5.4646182305065975e+02,
+      "iterations": 1398965,
+      "real_time": 5.2604021270073849e+02,
+      "cpu_time": 5.2556711568909884e+02,
       "time_unit": "ns"
     },
     {
@@ -84,8 +84,8 @@
       "threads": 1,
       "aggregate_name": "BigO",
       "aggregate_unit": "time",
-      "cpu_coefficient": 2.9075522032550342e+01,
-      "real_coefficient": 2.9102472469280574e+01,
+      "cpu_coefficient": 2.8401860405553833e+01,
+      "real_coefficient": 2.8437111311910442e+01,
       "big_o": "lgN",
       "time_unit": "ns"
     },
@@ -99,7 +99,7 @@
       "threads": 1,
       "aggregate_name": "RMS",
       "aggregate_unit": "percentage",
-      "rms": 1.4684870200510605e-01
+      "rms": 1.2435064674838159e-01
     },
     {
       "name": "StdMapInsertBenchmark/1000",
@@ -110,9 +110,9 @@
       "repetitions": 1,
       "repetition_index": 0,
       "threads": 1,
-      "iterations": 1130400,
-      "real_time": 6.4031776602354273e+02,
-      "cpu_time": 6.4002565463552730e+02,
+      "iterations": 1256868,
+      "real_time": 6.9816803674739128e+02,
+      "cpu_time": 6.9632371895855374e+02,
       "time_unit": "ns"
     },
     {
@@ -124,9 +124,9 @@
       "repetitions": 1,
       "repetition_index": 0,
       "threads": 1,
-      "iterations": 941582,
-      "real_time": 7.5131597070657040e+02,
-      "cpu_time": 7.5065899730453680e+02,
+      "iterations": 822610,
+      "real_time": 8.3083111510533763e+02,
+      "cpu_time": 8.2874266055603414e+02,
       "time_unit": "ns"
     },
     {
@@ -138,9 +138,9 @@
       "repetitions": 1,
       "repetition_index": 0,
       "threads": 1,
-      "iterations": 665823,
-      "real_time": 1.0507300284408357e+03,
-      "cpu_time": 1.0498751169605132e+03,
+      "iterations": 790675,
+      "real_time": 9.5523206185114032e+02,
+      "cpu_time": 9.5310083156796350e+02,
       "time_unit": "ns"
     },
     {
@@ -153,8 +153,8 @@
       "threads": 1,
       "aggregate_name": "BigO",
       "aggregate_unit": "time",
-      "cpu_coefficient": 6.1242075369317725e+01,
-      "real_coefficient": 6.1288908322660497e+01,
+      "cpu_coefficient": 6.1226165446452484e+01,
+      "real_coefficient": 6.1373928566415145e+01,
       "big_o": "lgN",
       "time_unit": "ns"
     },
@@ -168,7 +168,7 @@
       "threads": 1,
       "aggregate_name": "RMS",
       "aggregate_unit": "percentage",
-      "rms": 5.4659463586694393e-02
+      "rms": 7.5696071079646959e-02
     },
     {
       "name": "AVLFindBenchmark/1000",
@@ -179,9 +179,9 @@
       "repetitions": 1,
       "repetition_index": 0,
       "threads": 1,
-      "iterations": 5542447,
-      "real_time": 1.2659908869112283e+02,
-      "cpu_time": 1.2638569209592781e+02,
+      "iterations": 5283976,
+      "real_time": 1.2869815746916325e+02,
+      "cpu_time": 1.2823468539599730e+02,
       "time_unit": "ns"
     },
     {
@@ -193,9 +193,9 @@
       "repetitions": 1,
       "repetition_index": 0,
       "threads": 1,
-      "iterations": 3600767,
-      "real_time": 1.9709189396660523e+02,
-      "cpu_time": 1.9679334986129410e+02,
+      "iterations": 3473756,
+      "real_time": 2.0162122725998975e+02,
+      "cpu_time": 2.0115200952513595e+02,
       "time_unit": "ns"
     },
     {
@@ -207,9 +207,9 @@
       "repetitions": 1,
       "repetition_index": 0,
       "threads": 1,
-      "iterations": 2237816,
-      "real_time": 3.1270528403303791e+02,
-      "cpu_time": 3.1227098206465593e+02,
+      "iterations": 2034150,
+      "real_time": 3.4627240951752248e+02,
+      "cpu_time": 3.4549664479020743e+02,
       "time_unit": "ns"
     },
     {
@@ -222,8 +222,8 @@
       "threads": 1,
       "aggregate_name": "BigO",
       "aggregate_unit": "time",
-      "cpu_coefficient": 1.6422302398744296e+01,
-      "real_coefficient": 1.6446420175735941e+01,
+      "cpu_coefficient": 1.7560857640047587e+01,
+      "real_coefficient": 1.7603881514083191e+01,
       "big_o": "lgN",
       "time_unit": "ns"
     },
@@ -237,7 +237,7 @@
       "threads": 1,
       "aggregate_name": "RMS",
       "aggregate_unit": "percentage",
-      "rms": 1.5913978055215808e-01
+      "rms": 2.0077896955853702e-01
     },
     {
       "name": "StdMapFindBenchmark/1000",
@@ -248,9 +248,9 @@
       "repetitions": 1,
       "repetition_index": 0,
       "threads": 1,
-      "iterations": 1975543,
-      "real_time": 3.3207467206954107e+02,
-      "cpu_time": 3.3175283959903726e+02,
+      "iterations": 2070008,
+      "real_time": 3.4484085012301659e+02,
+      "cpu_time": 3.4132331855722242e+02,
       "time_unit": "ns"
     },
     {
@@ -262,9 +262,9 @@
       "repetitions": 1,
       "repetition_index": 0,
       "threads": 1,
-      "iterations": 1554485,
-      "real_time": 4.4596161593557184e+02,
-      "cpu_time": 4.4558487216023326e+02,
+      "iterations": 1535364,
+      "real_time": 4.6449046958442273e+02,
+      "cpu_time": 4.5965126185060961e+02,
       "time_unit": "ns"
     },
     {
@@ -276,9 +276,9 @@
       "repetitions": 1,
       "repetition_index": 0,
       "threads": 1,
-      "iterations": 1082335,
-      "real_time": 6.2668774047964905e+02,
-      "cpu_time": 6.2615825968854438e+02,
+      "iterations": 1066618,
+      "real_time": 5.9978293538890000e+02,
+      "cpu_time": 5.9929890551256517e+02,
       "time_unit": "ns"
     },
     {
@@ -291,8 +291,8 @@
       "threads": 1,
       "aggregate_name": "BigO",
       "aggregate_unit": "time",
-      "cpu_coefficient": 3.5572048142608004e+01,
-      "real_coefficient": 3.5602872870429593e+01,
+      "cpu_coefficient": 3.5275113508052009e+01,
+      "real_coefficient": 3.5469756944579515e+01,
       "big_o": "lgN",
       "time_unit": "ns"
     },
@@ -306,7 +306,7 @@
       "threads": 1,
       "aggregate_name": "RMS",
       "aggregate_unit": "percentage",
-      "rms": 6.1688917046726993e-02
+      "rms": 2.3668958991671624e-02
     },
     {
       "name": "AVLEraseBenchmark/1000",
@@ -317,9 +317,9 @@
       "repetitions": 1,
       "repetition_index": 0,
       "threads": 1,
-      "iterations": 32159807,
-      "real_time": 2.1643288101843510e+01,
-      "cpu_time": 2.1598637081373049e+01,
+      "iterations": 31836850,
+      "real_time": 2.2200845585176694e+01,
+      "cpu_time": 2.2156651804434187e+01,
       "time_unit": "ns"
     },
     {
@@ -331,9 +331,9 @@
       "repetitions": 1,
       "repetition_index": 0,
       "threads": 1,
-      "iterations": 28231157,
-      "real_time": 2.3684762298280564e+01,
-      "cpu_time": 2.3657443440947077e+01,
+      "iterations": 27951811,
+      "real_time": 2.4088892173735147e+01,
+      "cpu_time": 2.4063879081036898e+01,
       "time_unit": "ns"
     },
     {
@@ -345,9 +345,9 @@
       "repetitions": 1,
       "repetition_index": 0,
       "threads": 1,
-      "iterations": 14722434,
-      "real_time": 4.1088178971104604e+01,
-      "cpu_time": 4.1060330105742210e+01,
+      "iterations": 11485380,
+      "real_time": 4.5426712843486690e+01,
+      "cpu_time": 4.5388746388887455e+01,
       "time_unit": "ns"
     },
     {
@@ -360,8 +360,8 @@
       "threads": 1,
       "aggregate_name": "BigO",
       "aggregate_unit": "time",
-      "cpu_coefficient": 2.1958773647024743e+00,
-      "real_coefficient": 2.1981800805146912e+00,
+      "cpu_coefficient": 2.3460423738949117e+00,
+      "real_coefficient": 2.3485858725736879e+00,
       "big_o": "lgN",
       "time_unit": "ns"
     },
@@ -375,7 +375,7 @@
       "threads": 1,
       "aggregate_name": "RMS",
       "aggregate_unit": "percentage",
-      "rms": 1.4415072620859176e-01
+      "rms": 1.8261010942114661e-01
     },
     {
       "name": "StdMapEraseBenchmark/1000",
@@ -386,9 +386,9 @@
       "repetitions": 1,
       "repetition_index": 0,
       "threads": 1,
-      "iterations": 15116766,
-      "real_time": 4.6801611778066487e+01,
-      "cpu_time": 4.6761787541065452e+01,
+      "iterations": 14898784,
+      "real_time": 4.7077862368039526e+01,
+      "cpu_time": 4.7039275151582686e+01,
       "time_unit": "ns"
     },
     {
@@ -400,9 +400,9 @@
       "repetitions": 1,
       "repetition_index": 0,
       "threads": 1,
-      "iterations": 14242388,
-      "real_time": 4.8148125551943686e+01,
-      "cpu_time": 4.8102818151001152e+01,
+      "iterations": 14218027,
+      "real_time": 4.8324426385952862e+01,
+      "cpu_time": 4.8301216476800995e+01,
       "time_unit": "ns"
     },
     {
@@ -414,9 +414,9 @@
       "repetitions": 1,
       "repetition_index": 0,
       "threads": 1,
-      "iterations": 2249705,
-      "real_time": 2.3632604926126774e+02,
-      "cpu_time": 2.3609495467183527e+02,
+      "iterations": 2285061,
+      "real_time": 2.1951097759250447e+02,
+      "cpu_time": 2.1925497831349003e+02,
       "time_unit": "ns"
     },
     {
@@ -429,8 +429,8 @@
       "threads": 1,
       "aggregate_name": "BigO",
       "aggregate_unit": "time",
-      "cpu_coefficient": 2.3895936477808734e-03,
-      "real_coefficient": 2.3919302834792869e-03,
+      "cpu_coefficient": 2.2231016009571919e-03,
+      "real_coefficient": 2.2256627943251176e-03,
       "big_o": "N",
       "time_unit": "ns"
     },
@@ -444,7 +444,7 @@
       "threads": 1,
       "aggregate_name": "RMS",
       "aggregate_unit": "percentage",
-      "rms": 2.6495120100560909e-01
+      "rms": 2.8594808395538285e-01
     }
   ]
 }

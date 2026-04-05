@@ -25,13 +25,21 @@ signed main(int argc, char *argv[]) {
     size_t len = 0;
     ssize_t read;
 
-    while ((read = getline(&line, &len, stdin)) != -1) {
-        // printf("Доступные команды:\n");
-        // printf("1. Добавление значение по ключу\n");
-        // printf("2. Удаление узла по ключу\n");
-        // printf("3. Выведение дерева\n");
-        // printf("4. Нахождение значения по ключу\n");
-        // printf("Ввод: ");
+
+    do {
+        if (!ok) {
+            printf("Доступные команды:\n");
+            printf("1. Добавление значение по ключу\n");
+            printf("2. Удаление узла по ключу\n");
+            printf("3. Выведение дерева\n");
+            printf("4. Нахождение значения по ключу\n");
+            printf("-1. Выход\n");
+            printf("Ввод: ");
+        }
+
+        read = getline(&line, &len, stdin);
+
+        if (read == -1) break;
 
         if (read > 0 && line[read - 1] == '\n') {
             line[read - 1] = '\0';
@@ -83,8 +91,10 @@ signed main(int argc, char *argv[]) {
                 continue;
             }
             printf("Значение: %.4f\n", *finded);
+        } else {
+            printf("Неизвестная команда\n");
         }
-    }
+    } while (1);
 
     free(line);
     clearTree(t);
