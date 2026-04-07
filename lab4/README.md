@@ -86,6 +86,42 @@ RAM Type: LPDDR5
 
 ```
 
+```text
+-----------------------------------------------------------------------
+Benchmark                             Time             CPU   Iterations
+-----------------------------------------------------------------------
+AVLInsertBenchmark/1000             221 ns          221 ns      3107755
+AVLInsertBenchmark/10000            386 ns          385 ns      1901802
+AVLInsertBenchmark/100000           551 ns          550 ns      1154811
+AVLInsertBenchmark_BigO           29.87 lgN       29.83 lgN  
+AVLInsertBenchmark_RMS               14 %            14 %    
+StdMapInsertBenchmark/1000          535 ns          534 ns      1172431
+StdMapInsertBenchmark/10000         718 ns          718 ns       827560
+StdMapInsertBenchmark/100000        910 ns          910 ns       801723
+StdMapInsertBenchmark_BigO        54.35 lgN       54.32 lgN  
+StdMapInsertBenchmark_RMS             1 %             1 %    
+AVLFindBenchmark/1000               118 ns          118 ns      5831632
+AVLFindBenchmark/10000              186 ns          186 ns      3730071
+AVLFindBenchmark/100000             279 ns          278 ns      2536498
+AVLFindBenchmark_BigO             15.01 lgN       15.01 lgN  
+AVLFindBenchmark_RMS                 13 %            13 %    
+StdMapFindBenchmark/1000            320 ns          320 ns      2187644
+StdMapFindBenchmark/10000           427 ns          427 ns      1643474
+StdMapFindBenchmark/100000          651 ns          650 ns      1193785
+StdMapFindBenchmark_BigO          35.67 lgN       35.62 lgN  
+StdMapFindBenchmark_RMS              10 %            10 %    
+AVLEraseBenchmark/1000             21.0 ns         21.0 ns     33446894
+AVLEraseBenchmark/10000            23.2 ns         23.1 ns     28902211
+AVLEraseBenchmark/100000           36.1 ns         36.1 ns     16823786
+AVLEraseBenchmark_BigO             2.02 lgN        2.02 lgN  
+AVLEraseBenchmark_RMS                10 %            10 %    
+StdMapEraseBenchmark/1000          45.0 ns         45.0 ns     15589680
+StdMapEraseBenchmark/10000         46.6 ns         46.6 ns     14818018
+StdMapEraseBenchmark/100000         140 ns          139 ns      3854246
+StdMapEraseBenchmark_BigO          6.14 lgN        6.13 lgN  
+StdMapEraseBenchmark_RMS             40 %            40 %    
+```
+
 Все бенчмарки и их результаты сохранены в файле ***report.json***
 
 #### Выводы
