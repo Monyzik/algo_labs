@@ -1,6 +1,6 @@
 {
   "context": {
-    "date": "2026-05-04T20:17:26+03:00",
+    "date": "2026-05-05T18:15:14+03:00",
     "host_name": "MacBook-Pro-Fedor-2.local",
     "executable": "/Users/fedorkobylkevic/CLionProjects/algo_labs/cmake-build-debug/lab5_bench",
     "num_cpus": 14,
@@ -26,7 +26,7 @@
         "num_sharing": 1
       }
     ],
-    "load_avg": [1.6499,1.91748,2.55811],
+    "load_avg": [2.18359,1.94678,2.23242],
     "library_version": "v1.9.5",
     "library_build_type": "debug",
     "json_schema_version": 1
@@ -41,9 +41,9 @@
       "repetitions": 1,
       "repetition_index": 0,
       "threads": 1,
-      "iterations": 323286,
-      "real_time": 1.6996905534985131e+03,
-      "cpu_time": 1.6959348688158484e+03,
+      "iterations": 368897,
+      "real_time": 2.6923971456616337e+03,
+      "cpu_time": 2.6914938316115331e+03,
       "time_unit": "ns"
     },
     {
@@ -55,9 +55,9 @@
       "repetitions": 1,
       "repetition_index": 0,
       "threads": 1,
-      "iterations": 27844,
-      "real_time": 2.1818485295630413e+04,
-      "cpu_time": 2.1809438299094971e+04,
+      "iterations": 33809,
+      "real_time": 2.2438256586626514e+04,
+      "cpu_time": 2.2435830695968525e+04,
       "time_unit": "ns"
     },
     {
@@ -69,9 +69,9 @@
       "repetitions": 1,
       "repetition_index": 0,
       "threads": 1,
-      "iterations": 1834,
-      "real_time": 2.8253160620203713e+05,
-      "cpu_time": 2.8215485278080392e+05,
+      "iterations": 3600,
+      "real_time": 2.5482171111636690e+05,
+      "cpu_time": 2.5479694444444569e+05,
       "time_unit": "ns"
     },
     {
@@ -84,8 +84,8 @@
       "threads": 1,
       "aggregate_name": "BigO",
       "aggregate_unit": "time",
-      "cpu_coefficient": 4.6137384566636130e-01,
-      "real_coefficient": 4.6198736512796662e-01,
+      "cpu_coefficient": 4.1699810904908208e-01,
+      "real_coefficient": 4.1703867901020802e-01,
       "big_o": "NlgN",
       "time_unit": "ns"
     },
@@ -99,7 +99,7 @@
       "threads": 1,
       "aggregate_name": "RMS",
       "aggregate_unit": "percentage",
-      "rms": 1.6550293795055914e-03
+      "rms": 1.7211716854425768e-02
     },
     {
       "name": "PrimeWithPQBenchmark/100",
@@ -110,9 +110,9 @@
       "repetitions": 1,
       "repetition_index": 0,
       "threads": 1,
-      "iterations": 11663,
-      "real_time": 6.0899603339254696e+04,
-      "cpu_time": 6.0841035754094250e+04,
+      "iterations": 11439,
+      "real_time": 5.8438250814058199e+04,
+      "cpu_time": 5.8418917737564865e+04,
       "time_unit": "ns"
     },
     {
@@ -124,9 +124,9 @@
       "repetitions": 1,
       "repetition_index": 0,
       "threads": 1,
-      "iterations": 971,
-      "real_time": 7.2384150708372390e+05,
-      "cpu_time": 7.2319361483008100e+05,
+      "iterations": 960,
+      "real_time": 7.1383665005366004e+05,
+      "cpu_time": 7.1371875000000675e+05,
       "time_unit": "ns"
     },
     {
@@ -138,9 +138,9 @@
       "repetitions": 1,
       "repetition_index": 0,
       "threads": 1,
-      "iterations": 79,
-      "real_time": 8.9593899400928356e+06,
-      "cpu_time": 8.9218607594936918e+06,
+      "iterations": 81,
+      "real_time": 8.5437886508894563e+06,
+      "cpu_time": 8.5426666666667238e+06,
       "time_unit": "ns"
     },
     {
@@ -153,8 +153,8 @@
       "threads": 1,
       "aggregate_name": "BigO",
       "aggregate_unit": "time",
-      "cpu_coefficient": 1.4593181047317854e+01,
-      "real_coefficient": 1.4654259856198138e+01,
+      "cpu_coefficient": 1.3975652608136667e+01,
+      "real_coefficient": 1.3977491335357357e+01,
       "big_o": "NlgN",
       "time_unit": "ns"
     },
@@ -168,7 +168,7 @@
       "threads": 1,
       "aggregate_name": "RMS",
       "aggregate_unit": "percentage",
-      "rms": 4.7977120485814340e-03
+      "rms": 8.5650591381552701e-03
     }
   ]
 }

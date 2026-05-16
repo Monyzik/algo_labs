@@ -44,5 +44,6 @@ add_executable(lab5_bench lab5/benchmark.cpp lab5/tree.c lab5/graph.c lab5/prim.
 target_link_libraries(lab5_bench benchmark::benchmark)
 target_link_libraries(lab5_tests gtest_main gtest stdc++ benchmark::benchmark)
 
+
 include(GoogleTest)
 gtest_discover_tests(lab5_tests)
